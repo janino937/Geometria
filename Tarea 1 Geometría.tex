@@ -1,0 +1,104 @@
+% Title of Document:
+% Version:
+% Start Date:      
+% Revision Date:      
+%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt,answers]{exam}
+
+% do not print answers  
+\noprintanswers
+
+\usepackage{amsmath,amsfonts,amssymb}
+
+\usepackage[spanish]{babel}
+
+\usepackage[utf8]{inputenc}
+
+% Redifine Solution -> Solución
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución:}\enspace}
+
+% Redifine Point Points -> Punto Puntos 
+\pointpoints{punto}{puntos}
+
+%Pdf Graphicx
+\usepackage[pdftex]{graphicx,color} 
+\usepackage{graphicx}
+
+
+
+\textwidth=18truecm
+\textheight=25truecm
+\topmargin=-50pt
+\oddsidemargin=-20pt
+\evensidemargin=-20pt
+
+
+\begin{document}
+\begin{center}
+\bf
+GEOMETRÍA DIFERENCIAL 201620
+\\
+Tarea 1.  semana 1 (3/08 -- 5/03).
+\end{center}
+\bigskip
+
+\underline{\emph{La fecha para entregar la solución es el miércoles  10/08/2016}} 
+\bigskip
+
+\begin{questions}
+
+\question[1]
+Sea $\mathbb{S}^2 = \left\{ (x, y, z) \in \mathbb{R}^3 \mid (x^1)^2 + (x^2)^2 + (x^3)^2 = 1 \right\}$ la esfera unitaria en $\mathbb{R}^3$. 
+Pongamos,
+\begin{equation*}
+\begin{array}{l}
+U_3^+ = \left\{ (x^1, x^2, x^3) \in \mathbb{S}^3 \mid x^3 > 0  \right\}, \quad \varphi_3^+(x^1, x^2, x^3) = (x^1, x^2)
+\\
+U_3^- = \left\{ (x^1, x^2, x^3) \in \mathbb{S}^3 \mid x^3 < 0  \right\}, \quad \varphi_3^-(x^1, x^2, x^3) = (x^1, x^2)
+\\
+U_2^+ = \left\{ (x^1, x^2, x^3) \in \mathbb{S}^3 \mid x^2 > 0  \right\}, \quad \varphi_2^+(x^1, x^2, x^3) = (x^3, x^1)
+\\
+U_2^- = \left\{ (x^1, x^2, x^3) \in \mathbb{S}^3 \mid x^2 < 0  \right\}, \quad \varphi_2^-(x^1, x^2, x^3) = (x^3, x^1)
+\\
+U_1^+ = \left\{ (x^1, x^2, x^3) \in \mathbb{S}^3 \mid x^1 > 0  \right\}, \quad \varphi_1^+(x^1, x^2, x^3) = (x^2, x^3)
+\\ 
+U_1^- = \left\{ (x^1, x^2, x^3) \in \mathbb{S}^3 \mid x^1 < 0  \right\}, \quad \varphi_1^-(x^1, x^2, x^3) = (x^2, x^3)
+\\
+\end{array}
+\end{equation*} 
+Probar que $\mathcal{A} = \left\{ (U_i^{\pm}, \varphi_i^{\pm}) \right\}$ es un atlas sobre $\mathbb{S}^2$. 
+
+
+
+\question[1]
+Construir un atlas sobre la esfera $n$-dimensional  $\mathbb{S}^n = \left\{ x \in \mathbb{R}^{n + 1} \mid \| x \| = 1 \right\}$ que consiste de dos cartas. Ayuda: usar la proyección estereográfica.  
+
+
+\question[1]
+Probar que la topología determinada por la estructura de variedad sobre $\mathbb{S}^2$ (ver los ejercicios 1 y 2) coincide con la topología inducida por la inclusión $\mathbb{S}^2 \subset \mathbb{R}^3$.   
+
+
+
+\question[1]
+Sean $(M_1, \mathcal{A}_1)$ y  $(M_2, \mathcal{A}_2)$ dos variedades.
+Probar que
+
+a) Para dos cartas  $c_1 = (U_1, \varphi_1) \in \mathcal{A}_1$ y $c_2 = (U_2, \varphi_2) \in \mathcal{A}_2$, la pareja $c_1 \times c_2 = (U_1 \times U_2, \varphi_1 \times \varphi_2)$ es una carta sobre $M_1 \times M_2$.
+
+b) El conjunto de cartas $\mathcal{A}_1 \times \mathcal{A}_2 = \left\{ c_1 \times c_2 \mid c_1 \in \mathcal{A}_1, c_2 \in \mathcal{A}_2 \right\}$ es un atlas sobre $M_1 \times M_2$. 
+
+La variedad $M_1 \times M_2 = (M_1 \times M_2, \mathcal{A}_1 \times \mathcal{A}_2)$ se llama el \emph{producto de las variedades $M_1$ y $M_2$}.
+
+\question[1]
+Sean $M_1$ y $M_2$ variedades.
+Probar que 
+
+a) La proyección $\pi_1 : M_1 \times M_2 \to M_1$, $\pi_1(p_1, p_2) = p_1$, es una aplicación suave.
+
+b) Una aplicación $f : N \to M_1 \times M_2$, donde $N$ es una variedad, es suave si y sólo si $\pi_1 \circ f : N \to M_1$ y $\pi_2 \circ f : N \to M_2$ son aplicaciones suaves.  
+
+
+\end{questions}
+
+
+\end{document}
